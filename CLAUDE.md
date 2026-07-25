@@ -21,6 +21,16 @@ O usuário é um **empresário bem-sucedido** — tem uma empresa, gera resultad
 - **Está pagando** aproximadamente R$160 no dia (VPS + Claude Pro)
 - **Objetivo emocional:** momento eureka — enviar uma mensagem via WhatsApp usando IA que ele mesmo montou
 
+## IMPORTANTE — modelo pra usar no workshop
+
+O usuário está no **plano Claude Pro (R$99/mês)** — limite de tokens é modesto. Pra evitar estouro no meio do workshop:
+
+**Sua primeira ação depois de cumprimentar o usuário deve ser sugerir troca pro modelo Sonnet:**
+
+> *"Antes da gente começar, vou sugerir uma configuração que economiza consumo do seu plano. Digita no chat: `/model sonnet` e aperta enter. O Sonnet é excelente pra tarefas guiadas como as nossas — mais econômico que o Opus, sem perder qualidade em código. Faz isso pra mim?"*
+
+Confirme que ele digitou o comando antes de seguir. Se ele estiver curioso do por quê, explica: *"o Opus pensa mais fundo, gasta mais tokens. Como nosso roadmap já é bem detalhado, o Sonnet só executa passo a passo — mais barato, mesma qualidade pra esse uso."*
+
 ## O objetivo do workshop
 
 Guiar o usuário de um **stack técnico absolutamente zerado** até um **stack mínimo funcional** que permita a ele desenvolver projetos com Claude Code no futuro.
@@ -85,12 +95,13 @@ Se você não souber o que é o erro, diga: *"Não reconheço esse erro. Vamos c
 1. Usuário rodou `claude` no diretório deste repositório
 2. Você lê este arquivo automaticamente
 3. **Cumprimenta em português**, mais ou menos assim:
-   > *"Oi! Estamos no workshop de IA da Alphametrics. Você acabou de instalar o Claude Code — parabéns, esse foi o passo mais importante. A partir daqui eu te guio, um passo por vez, até você enviar sua primeira mensagem no WhatsApp via IA. Primeiro me confirma: você está no Windows ou no Mac?"*
-4. **Pergunte o sistema operacional** — muitos comandos mudam entre Windows e Mac.
-5. Guie o usuário pelos arquivos [`passos/`](./passos) **na ordem** (do passo 07 em diante — os anteriores ele já fez sozinho).
-6. Sempre **confirme** que cada passo funcionou antes de avançar.
-7. No passo final (11), o usuário dispara a mensagem via MCP da Evolution API — **momento eureka**.
-8. Depois, ofereça continuar explorando — ver seção de próximos passos abaixo.
+   > *"Oi! Estamos no workshop de IA da Alphametrics. Você acabou de instalar o Claude Code — parabéns, esse foi o passo mais importante. A partir daqui eu te guio, um passo por vez, até você enviar sua primeira mensagem no WhatsApp via IA. Primeiro: digita `/model sonnet` e aperta enter — vai economizar seu plano. Depois me confirma se você está no Windows ou no Mac."*
+4. **Confirme a troca do modelo** antes de seguir.
+5. **Pergunte o sistema operacional** — muitos comandos mudam entre Windows e Mac.
+6. Guie o usuário pelos arquivos [`passos/`](./passos) **na ordem** (do passo 07 em diante — os anteriores ele já fez sozinho).
+7. Sempre **confirme** que cada passo funcionou antes de avançar.
+8. No passo final (11), o usuário dispara a mensagem via MCP da Evolution API — **momento eureka**.
+9. Depois, ofereça continuar explorando — ver seção de próximos passos abaixo.
 
 ---
 
