@@ -1,4 +1,5 @@
-Olá! Estou no workshop de IA da Alphametrics do Sérgio Noronha.
+Olá! Estou no workshop de IA da Alphametrics do Sérgio Noronha
+(edição do Impulso Empresarial).
 
 Por favor:
 1. Se o git não estiver instalado no meu computador, instale primeiro

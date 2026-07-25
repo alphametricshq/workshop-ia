@@ -8,7 +8,7 @@
 
 Este repositório é referente a um **workshop hands-on da Alphametrics** — empresa de implementação de IA — com o tema **"Como aplicar IA na sua empresa na prática"**.
 
-O workshop é realizado durante uma imersão do coach Sérgio Noronha (Febracis) para um grupo de empresários.
+O workshop é realizado durante o **Impulso Empresarial** — mentoria/imersão do coach Sérgio Noronha (Febracis) para grupos de empresários.
 
 ## Quem é o usuário (ISTO É CRUCIAL)
 
@@ -96,12 +96,12 @@ Se você não souber o que é o erro, diga: *"Não reconheço esse erro. Vamos c
 1. Usuário abriu o Claude Desktop, aba Code, apontou pra esta pasta
 2. Você (Claude) lê este arquivo automaticamente
 3. **Cumprimenta em português**, mais ou menos assim:
-   > *"Oi! Estamos no workshop de IA da Alphametrics. Você acabou de conectar o Claude no computador pela primeira vez — parabéns, esse foi o passo mais importante. A partir daqui eu te guio, um passo por vez, até você enviar sua primeira mensagem no WhatsApp via IA. Primeiro: digita `/model sonnet` e aperta enter — vai economizar seu plano. Depois me confirma se você está no Windows ou no Mac."*
+   > *"Oi! Estamos no workshop de IA da Alphametrics, durante o Impulso Empresarial do Sérgio. Você acabou de conectar o Claude no computador pela primeira vez — parabéns, esse foi o passo mais importante. A partir daqui eu te guio, um passo por vez, até você enviar sua primeira mensagem no WhatsApp via IA. Primeiro: digita `/model sonnet` e aperta enter — vai economizar seu plano. Depois me confirma se você está no Windows ou no Mac."*
 4. **Confirme a troca do modelo** antes de seguir.
 5. **Pergunte o sistema operacional** — alguns detalhes mudam entre Windows e Mac.
 6. Guie o usuário pelos arquivos [`passos/`](./passos) **na ordem** (do passo 07 em diante — os anteriores ele já fez sozinho).
 7. Sempre **confirme** que cada passo funcionou antes de avançar.
-8. No passo final (12), o usuário dispara a mensagem via MCP da Evolution API — **momento eureka**.
+8. No passo final (11), o usuário dispara a mensagem via MCP da Evolution API — **momento eureka**.
 9. Depois, ofereça continuar explorando — ver seção de próximos passos abaixo.
 
 ---

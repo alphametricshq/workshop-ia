@@ -4,9 +4,9 @@
 
 ## Se você chegou aqui
 
-Você provavelmente está (ou vai estar) na imersão de empresários do coach Sérgio Noronha (Febracis), num workshop apresentado pela [Alphametrics](https://alphametrics.com.br) sobre **como aplicar IA na sua empresa na prática**.
+Você provavelmente está (ou vai estar) numa edição da imersão **Impulso Empresarial** do coach Sérgio Noronha (Febracis), num workshop apresentado pela [Alphametrics](https://alphametrics.com.br) sobre **como aplicar IA na sua empresa na prática**.
 
-Este repositório é o **roteiro passo a passo** desse workshop. É hands-on: no fim, você vai enviar uma mensagem no WhatsApp usando um agente de IA que **você mesmo montou** — e ainda vai criar um site.
+Este repositório é o **roteiro passo a passo** desse workshop. É hands-on: no fim, você vai enviar uma mensagem no WhatsApp usando um agente de IA que **você mesmo montou**.
 
 ## Pra quem é este material
 
@@ -34,7 +34,8 @@ Ao abrir o Claude Desktop pela primeira vez, ele vai pedir pra você fazer login
 Dentro do Claude Desktop, clique na aba **Code** (no topo). Vai abrir uma tela pra conversar com o Claude Code. Cole o prompt abaixo (o texto inteiro, do começo até o fim) e aperte enter:
 
 ```
-Olá! Estou no workshop de IA da Alphametrics do Sérgio Noronha.
+Olá! Estou no workshop de IA da Alphametrics do Sérgio Noronha
+(edição do Impulso Empresarial).
 
 Por favor:
 1. Se o git não estiver instalado no meu computador, instale primeiro
