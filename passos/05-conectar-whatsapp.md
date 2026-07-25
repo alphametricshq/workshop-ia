@@ -1,28 +1,87 @@
 # Passo 05 — Conectar seu WhatsApp
 
-> Conduzido pelo Claude.
+> Voce faz manualmente no navegador. O Claude te guia.
 
-## Antes de comecar
+## ANTES DE COMEÇAR — leia com atenção
 
-**IMPORTANTE:** desconecta TODAS as sessoes de WhatsApp Web/Desktop do seu computador. O WhatsApp so aceita uma sessao ativa por vez.
+O WhatsApp aceita **apenas uma sessão web ativa por vez**. Se você está logado em WhatsApp Web (navegador) ou WhatsApp Desktop (app), o Evolution não vai conseguir conectar.
 
-No seu celular:
+**Desconecte TODAS as sessões agora:**
+
+1. No seu **celular**, abre WhatsApp
+2. Menu (3 pontinhos ou Configurações)
+3. Clica em **Aparelhos conectados**
+4. Se aparecer qualquer sessão de "Windows", "Mac" ou "Chrome", clica nela e **Desconectar**
+
+Só depois disso segue.
+
+---
+
+## O que você vai fazer
+
+Criar uma **instance** no Evolution (chame com seu nome/empresa), gerar um **QR code**, e escanear pelo celular.
+
+## Passo a passo
+
+### 1. Abrir o Manager
+
+No navegador, vai em: **http://SEU_IP:3000** (troca `SEU_IP` pelo IP da sua VPS — aquele que a Contabo te mandou).
+
+Vai aparecer a tela do **Evolution Manager** (fundo azul-escuro, logo "Evolution" no topo).
+
+### 2. Fazer login no Manager
+
+O Manager pede uma **API Key**. Cola aquela chave de 32 caracteres que o Claude gerou pra você no passo 04.
+
+Clica em **Entrar** (ou **Login**).
+
+### 3. Criar uma instance
+
+Dentro do Manager, clica no botão **➕ Instance** (ou **New Instance / Nova Instância**) no canto superior direito.
+
+Preenche:
+
+- **Instance Name:** algo simples, tipo `atilio-workshop` (troca por seu nome)
+- **Integration:** deixa **WHATSAPP-BAILEYS** (padrão)
+- **Token:** deixa vazio (auto-gerado)
+
+Clica em **Save** ou **Criar**.
+
+### 4. Escanear o QR code
+
+Apareceu um QR code grande na tela do Manager? Perfeito.
+
+No seu **celular**:
 
 1. Abre WhatsApp
-2. Vai em **Configuracoes → Aparelhos conectados**
-3. Se tiver alguma sessao de "Windows" ou "Mac", clica e desconecta
+2. **Configurações → Aparelhos conectados → Conectar aparelho**
+3. Aponta a câmera do celular pro QR code na tela do computador
 
-## O que o Claude vai fazer
+Em poucos segundos, o Manager vai mudar o status pra **CONNECTED** (verde). Seu WhatsApp está conectado à Evolution.
 
-1. Criar uma **instance** nova no Evolution com o seu nome (ex: `atilio-workshop`)
-2. Gerar um **QR code** — vai aparecer no painel Evolution ou o Claude te da o link
-3. Voce escaneia o QR com seu celular (WhatsApp → Aparelhos conectados → Conectar aparelho)
-4. Aguarda a confirmacao "Connected"
+---
 
-## Depois de conectar
+## Como saber que funcionou
 
-Seu WhatsApp esta oficialmente ligado ao Evolution rodando na sua VPS. A partir daqui, o Claude pode enviar mensagens pelo seu numero.
+- O card da instance no Manager mostra **status: open** (ou **CONNECTED**)
+- Seu nome/foto aparece no card
+- Se você rodar `curl http://SEU_IP:8080/instance/connect/atilio-workshop -H 'apikey: SUA_CHAVE'` — vai retornar JSON dizendo que está conectada
 
-## Alerta
+Volta pro Claude e diz "conectei". Ele avança pro momento eureka.
 
-O WhatsApp que voce conectou vai ficar instavel enquanto essa sessao estiver ativa no Evolution. **Nao use pra reunioes criticas hoje.**
+---
+
+## ⚠️ Enquanto Evolution estiver conectado no seu número:
+
+- **WhatsApp Web não funciona** no seu navegador
+- **WhatsApp Desktop não funciona**
+- **O WhatsApp do celular funciona normal** (é só uma sessão adicional)
+- Se você precisar do WhatsApp Web depois, pode desligar a instance no Manager (botão **Logout**) e reconectar via Web normalmente
+
+---
+
+## Deu erro?
+
+Ver [troubleshooting/whatsapp-web-conflito.md](../troubleshooting/whatsapp-web-conflito.md).
+
+Se o QR code não aparecer, chama o Claude — ele reinicia a instance. Se não resolver, chama o Atilio.

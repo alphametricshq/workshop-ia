@@ -1,0 +1,59 @@
+# Docker Compose template pra Evolution API v2
+# Referencia: https://github.com/evolution-foundation/evolution-api
+#
+# Como usar (o Claude vai fazer isso pra voce):
+#   1. Salvar este arquivo em /opt/evolution/docker-compose.yaml na VPS
+#   2. Criar .env correspondente (ver configs/evolution.env)
+#   3. Rodar: docker compose up -d
+#
+# Servicos que sobem:
+#   - evolution_api (porta 8080)   - a API que faz o trabalho
+#   - evolution_manager (porta 3000) - painel visual
+#   - postgres (interno)            - banco pra sessoes/mensagens
+#   - redis (interno)               - cache
+
+services:
+
+  evolution_api:
+    image: atendai/evolution-api:v2.2.3
+    container_name: evolution_api
+    restart: always
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - evolution_instances:/evolution/instances
+
+  evolution_manager:
+    image: gabrielpastori1/evolution-manager:latest
+    container_name: evolution_manager
+    restart: always
+    ports:
+      - "3000:80"
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: evolution
+      POSTGRES_PASSWORD: evolution_pg_pass_change_me
+      POSTGRES_DB: evolution
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: always
+    volumes:
+      - redis_data:/data
+
+volumes:
+  evolution_instances:
+  postgres_data:
+  redis_data:
