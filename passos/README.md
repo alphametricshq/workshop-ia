@@ -1,12 +1,12 @@
 # Passos do workshop
 
-**Siga os arquivos na ordem numerica. Nao pule etapas.**
+**Siga os arquivos na ordem numérica. Não pule etapas.**
 
 ---
 
-## Antes do Claude — voce faz sozinho (3 passos)
+## Antes do Claude — você faz sozinho (3 passos)
 
-Veja o [README](../README.md) na raiz. Sao **3 passos** simples:
+Veja o [README](../README.md) na raiz. São **3 passos** simples:
 
 1. Baixar Claude Desktop
 2. Criar conta Anthropic + assinar Pro
@@ -18,11 +18,11 @@ Depois disso, o Claude assume.
 
 ## Depois do Claude — ele te guia
 
-O Claude vai passar por estes passos automaticamente, um por vez, esperando voce confirmar antes de avancar.
+O Claude vai passar por estes passos automaticamente, um por vez, esperando você confirmar antes de avançar.
 
 - [`01-configurar-sonnet.md`](01-configurar-sonnet.md) — economizar tokens do seu plano (`/model sonnet`)
-- [`02-contratar-vps.md`](02-contratar-vps.md) — servidor proprio na Contabo
-- [`03-instalar-mcp-vps.md`](03-instalar-mcp-vps.md) — Claude passa a controlar a VPS diretamente
+- [`02-contratar-vps.md`](02-contratar-vps.md) — servidor próprio na Contabo
+- [`03-conectar-vps.md`](03-conectar-vps.md) — dar acesso da VPS pro Claude (SSH via terminal integrado)
 - [`04-instalar-evolution.md`](04-instalar-evolution.md) — Evolution API (open source, roda via Docker)
 - [`05-conectar-whatsapp.md`](05-conectar-whatsapp.md) — escanear QR code no Manager UI
 - [`06-enviar-mensagem-final.md`](06-enviar-mensagem-final.md) — **momento eureka** (mensagem pro Atilio)
@@ -36,13 +36,13 @@ O Claude vai passar por estes passos automaticamente, um por vez, esperando voce
 
 ---
 
-## Roadmap pos-workshop (pra continuar depois)
+## Roadmap pós-workshop (pra continuar depois)
 
-Se voce quiser evoluir seu stack apos o workshop:
+Se você quiser evoluir seu stack após o workshop:
 
-- Contratar **dominio proprio** (`seunegocio.com`)
-- Configurar **Cloudflare + HTTPS** pro dominio apontar pra VPS
-- Automacoes de **WhatsApp mais complexas** (fluxos, webhooks, integracao com ERP)
-- **Dashboards e relatorios** conectados aos seus dados
+- Contratar **domínio próprio** (`seunegocio.com`)
+- Configurar **Cloudflare + HTTPS** pro domínio apontar pra VPS
+- Automações de **WhatsApp mais complexas** (fluxos, webhooks, integração com ERP)
+- **Dashboards e relatórios** conectados aos seus dados
 
-Seu Claude te guia em qualquer um. E so pedir.
+Seu Claude te guia em qualquer um. É só pedir.
