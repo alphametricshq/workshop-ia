@@ -6,7 +6,7 @@
 
 ## Antes do Claude Code — você faz sozinho (com o Atilio ajudando na sala)
 
-Até instalar o Claude Code, você lê os passos aqui no navegador e faz no seu computador. Se travar, chama o Atilio.
+Até instalar o Claude Code, você lê os passos aqui no navegador e faz no seu computador. Se travar, chama o Atilio ou o vizinho do lado.
 
 - `01-preparacao.md` — o que ter no computador antes de começar
 - `02-instalar-git.md` — pra conseguir baixar este próprio repositório
@@ -22,11 +22,28 @@ Até instalar o Claude Code, você lê os passos aqui no navegador e faz no seu 
 A partir daqui, você abre o terminal no diretório do workshop, roda `claude`, e o Claude Code assume a condução. Você só acompanha e confirma cada passo.
 
 - `07-contratar-vps.md` — servidor próprio na Contabo
-- `08-registrar-dominio.md` — seu domínio
-- `09-cloudflare-dns.md` — apontar domínio pro servidor
-- `10-instalar-mcp-vps.md` — Claude passa a controlar a VPS
-- `11-instalar-evolution.md` — motor de WhatsApp na VPS
-- `12-conectar-whatsapp.md` — escanear QR code
-- `13-enviar-mensagem-final.md` — **momento eureka**
+- `08-instalar-mcp-vps.md` — Claude passa a controlar a VPS
+- `09-instalar-evolution.md` — motor de WhatsApp na VPS
+- `10-conectar-whatsapp.md` — escanear QR code
+- `11-enviar-mensagem-final.md` — **momento eureka**
+
+---
+
+## Bonus (se sobrar tempo)
+
+- `12-criar-site-vercel.md` — seu primeiro site publicado com Claude Code
+
+---
+
+## Roadmap pós-workshop (pra continuar depois)
+
+Se você quiser evoluir seu stack após o workshop, próximos passos naturais:
+
+- Contratar **domínio próprio** (`seunegocio.com`)
+- Configurar **Cloudflare + HTTPS**
+- Automações de **WhatsApp mais complexas**
+- **Dashboards e relatórios** conectados aos seus dados
+
+Seu Claude Code te guia em qualquer um. É só pedir.
 
 _Este diretório será preenchido durante a construção do material — esta é a lista prevista._
